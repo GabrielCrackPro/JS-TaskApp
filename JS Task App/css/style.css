@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: rgba(204, 204, 204, 0.781);
+}
+nav a{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+form{
+    background-color: #ccc;
+    width: 30%;
+    margin-left: 15px;
+    transition: all 1s ease-in-out;
+    outline: 1px solid rgb(67, 67, 236);
+}
+form h4{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 25px;
+    margin-left: 5px;
+    text-align: center;
+}
+form input[type="text"],form textarea{
+    margin-bottom: 5px;
+    width: 95%;
+    padding: 5px;
+    margin-left: 5px;
+}
+form button{
+    width: 95%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: rgb(107, 248, 107);
+    font-weight: bold;
+    border: none;
+}
+form input[type="text"]:focus,form textarea:focus{
+    outline: 1px solid rgb(67, 67, 236);
+    transition: all .3s ease;
+}
+form button:hover{
+    background-color: rgb(40, 238, 40);
+    outline: 1px solid rgb(67, 67, 236);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.task-list{
+    position: absolute;
+    top: 50px;
+    left: 450px;
+    width: 500px;
+    background-color: #ccc;
+    margin-bottom: 5px;
+}
+.task-list h4{
+    text-transform: uppercase;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.task-list p{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.task-list button{
+    margin-left: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 100px;
+    color: #fff;
+    background-color: rgb(167, 45, 45);
+    border: none;
+}
+.task-list button:hover{
+    cursor: pointer;
+    background-color: red;
+    transition: all .3s ease;
+    outline: 1px solid rgb(67, 67, 236);
+}
+.task-list #done-btn{
+    background-color: rgb(107, 248, 107);
+}
+.task-list #done-btn:hover{
+    cursor: pointer;
+    background-color: rgb(40, 238, 40);
+    transition: all .3s ease;
+}
+#delete-all-task-btn{
+    background-color: rgb(167, 45, 45);
+}
+#delete-all-task-btn:hover{
+    background-color: red;
+    transition: all .3s ease;
+}
+#task-date-value{
+    position: absolute;
+    top: 20px;
+    left: 400px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+#hide-form-btn{
+    margin-left: 5px;
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+#hide-form-btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all .3s ease;
+}
+.hide{
+    transform: translateX(-500px);
+}
+.moveTask{
+    transform: translateX(-400px);
+    transition: all 1s ease-in-out;
+}
+footer{
+    margin-top: 200px;
+    text-align: center;
+    background-color: #ccc;
+    padding: 5px;
+}
+footer a{
+    margin-left: 5px;
+    color: #000;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    transition: all .3s ease;
+}

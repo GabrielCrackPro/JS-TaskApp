@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Task App</title>
+    <link rel="stylesheet" href="/JS Task App/css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="#">JS Task App</a>
+        <button id="hide-form-btn" onclick="HideShowForm()">Hide</button>
+    </nav>
+    <div class="container">
+        <div>
+            <form id="tasks-form">
+                <h4>Add A Task</h4>
+                <input type="text" id="task-title" placeholder="Task Title" autocomplete="off" spellcheck="off">
+                <br>
+                <input type="text" id="task-date" placeholder="DD/MM/YYY" autocomplete="off" spellcheck="off">
+                <br>
+                <textarea  id="task-description" cols="30" rows="10" placeholder="Task Description" autocomplete="off" spellcheck="off"></textarea>
+                <button id="add-task-btn">Add</button>
+                <br>
+                <button id="delete-all-task-btn">Delete All</button>
+            </form>
+        </div>
+        <div class="task-list"></div>
+    </div>
+    <footer>&copy 2020 GVR.INC <a href="http://github.com/GabrielCrackPro" target="blank">Learn More</a></footer>
+   <script src="/JS Task App/js/app.js"></script>
+</body>
+</html>
