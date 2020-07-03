@@ -9,7 +9,7 @@ const deleteAllTaskBtn = document.querySelector('#delete-all-task-btn')
 const hideShowForm = document.querySelector('#hide-form-btn')
 //Save task data
 taskForm.addEventListener('submit',(e)=>{
-    e.preventDefault() //Cancel the default form event*/
+    e.preventDefault() //Cancel the default form event
 })
 addTaskBtn.addEventListener('click',()=>{
     let task = {
@@ -22,9 +22,6 @@ addTaskBtn.addEventListener('click',()=>{
         <p>${task.taskDescription.value}</p>
         <p id="task-date-value">${task.taskDate.value}</p>
         </div>`
-       /* let savedTitle = localStorage.setItem('Task Title',task.taskTitle.value)
-        let savedDate = localStorage.setItem('Task Date', task.taskDate.value)
-        let savedDescription = localStorage.setItem('Task Description',task.taskDescription.value)*/
     taskForm.reset()
 })
 deleteAllTaskBtn.addEventListener('click',()=>{
