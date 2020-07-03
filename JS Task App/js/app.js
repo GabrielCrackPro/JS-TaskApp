@@ -21,12 +21,13 @@ addTaskBtn.addEventListener('click',()=>{
         <h4>${task.taskTitle.value}</h4>
         <p>${task.taskDescription.value}</p>
         <p id="task-date-value">${task.taskDate.value}</p>
-        </div>`
+        </div>` 
     taskForm.reset()
 })
 deleteAllTaskBtn.addEventListener('click',()=>{
     taskList.innerHTML = ''
 })
+//Animate form
 function HideShowForm(){
     taskForm.classList.toggle('hide')
     hideShowForm.classList.toggle('togglebtn')
