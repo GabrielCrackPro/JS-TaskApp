@@ -2,6 +2,7 @@
 const taskForm = document.querySelector('#tasks-form')
 let taskTitle = document.querySelector('#task-title')
 let taskDate = document.querySelector('#task-date')
+let taskCategory = document.querySelector('#task-category')
 let taskDescription = document.querySelector('#task-description')
 const addTaskBtn = document.querySelector('#add-task-btn')
 const taskList = document.querySelector('.task-list')
@@ -15,13 +16,16 @@ addTaskBtn.addEventListener('click',()=>{
     let task = {
         taskTitle: taskTitle,
         taskDescription: taskDescription,
-        taskDate: taskDate
+        taskDate: taskDate,
+        taskCategory: taskCategory
     }
     taskList.innerHTML += `<div class ="task-container">
         <h4>${task.taskTitle.value}</h4>
         <p>${task.taskDescription.value}</p>
         <p id="task-date-value">${task.taskDate.value}</p>
-        </div>` 
+        <p id="task-category-value">${task.taskCategory.value}</p>
+        <hr>
+        </div>`
     taskForm.reset()
 })
 deleteAllTaskBtn.addEventListener('click',()=>{

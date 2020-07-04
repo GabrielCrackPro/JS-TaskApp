@@ -129,6 +129,39 @@ form button:hover{
     transform: translateX(-400px);
     transition: all 1s ease-in-out;
 }
+#task-category{
+    margin-bottom: 5px;
+    margin-left: 5px;
+    padding: 5px;
+    width: 95%;
+}
+#task-category option[value="Social"]{
+    color: #FF0000;
+    font-weight: bold;
+}
+#task-category option[value="Work"]{
+    color: #FFA200;
+    font-weight: bold;
+}
+#task-category option[value="Sport"]{
+    color: #FFF000;
+    font-weight: bold;
+}
+#task-category option[value="Fun"]{
+    color: #A2FF00;
+    font-weight: bold;
+}
+#task-category:focus{
+    outline: 1px solid rgb(67, 67, 236);
+}
+#task-category-value{
+    position: absolute;
+    left: 300px;
+    top: 20px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 footer{
     margin-top: 200px;
     text-align: center;

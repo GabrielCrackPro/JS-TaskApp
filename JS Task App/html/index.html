@@ -15,15 +15,23 @@
         <div>
             <form id="tasks-form">
                 <h4>Add A Task</h4>
-                <input type="text" id="task-title" placeholder="Task Title" autocomplete="off" spellcheck="off">
+                <input type="text" id="task-title" placeholder="Task Title" autocomplete="off" spellcheck="off" autofocus>
                 <br>
                 <input type="text" id="task-date" placeholder="DD/MM/YYY" autocomplete="off" spellcheck="off">
+                <br>
+                <select id="task-category">
+                    <option value="Select A Category">---Select a category---</option>
+                    <option value="Social">Social</option>
+                    <option value="Work">Work</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Fun">Fun</option>
+                </select>
                 <br>
                 <textarea  id="task-description" cols="30" rows="10" placeholder="Task Description" autocomplete="off" spellcheck="off"></textarea>
                 <button id="add-task-btn">Add</button>
                 <br>
                 <button id="delete-all-task-btn">Delete All</button>
-            </form>
+            </form> 
         </div>
         <div class="task-list"></div>
     </div>
