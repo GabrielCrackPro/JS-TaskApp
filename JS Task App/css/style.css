@@ -1,8 +1,11 @@
+/*Main styles*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+/*Nav styles*/
 nav{
     background-color: rgba(204, 204, 204, 0.781);
 }
@@ -15,6 +18,7 @@ nav a{
     margin-bottom: 15px;
     padding-bottom: 5px;
 }
+/*Form styles*/
 form{
     background-color: #ccc;
     width: 30%;
@@ -41,8 +45,14 @@ form button{
     margin-bottom: 5px;
     padding: 5px;
     background-color: rgb(107, 248, 107);
+    color: #fff;
     font-weight: bold;
     border: none;
+    outline: none;
+}
+form button:hover{
+    color: #000;
+    transition: all .3s;
 }
 form input[type="text"]:focus,form textarea:focus{
     outline: 1px solid rgb(67, 67, 236);
@@ -54,6 +64,7 @@ form button:hover{
     cursor: pointer;
     transition: all .3s ease;
 }
+/*Task List styles*/
 .task-list{
     position: absolute;
     top: 50px;
@@ -79,21 +90,9 @@ form button:hover{
     color: #fff;
     background-color: rgb(167, 45, 45);
     border: none;
+    outline: none;
 }
-.task-list button:hover{
-    cursor: pointer;
-    background-color: red;
-    transition: all .3s ease;
-    outline: 1px solid rgb(67, 67, 236);
-}
-.task-list #done-btn{
-    background-color: rgb(107, 248, 107);
-}
-.task-list #done-btn:hover{
-    cursor: pointer;
-    background-color: rgb(40, 238, 40);
-    transition: all .3s ease;
-}
+/*Form buttons styles*/
 #delete-all-task-btn{
     background-color: rgb(167, 45, 45);
 }
@@ -122,6 +121,7 @@ form button:hover{
     text-decoration: underline;
     transition: all .3s ease;
 }
+/*Hide form class*/
 .hide{
     transform: translateX(-500px);
 }
@@ -129,6 +129,7 @@ form button:hover{
     transform: translateX(-400px);
     transition: all 1s ease-in-out;
 }
+/*Task Category styles*/
 #task-category{
     margin-bottom: 5px;
     margin-left: 5px;
@@ -162,6 +163,76 @@ form button:hover{
     text-transform: uppercase;
     font-weight: bold;
 }
+/*Alerts styles*/
+/*Task Added styles*/
+.task-added-alert{
+    display: none;
+    background-color: rgb(107, 248, 107);
+    position: absolute;
+    width: 100%;
+    height: 40px;
+}
+.task-added-alert p{
+    font-size: 25px;
+    margin-left: 35px;
+}
+.task-added-alert button{
+    position: absolute;
+    left: 97%;
+    top: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+.task-added-alert button:hover{
+    color: rgb(167, 45, 45);
+    transition: all .3s;
+}
+.task-added-alert button i{
+    font-size: 25px;
+}
+.task-added-alert i[class="fas fa-info-circle"]{
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+}
+/*Task Removed styles*/
+.task-removed-alert{
+    display: none;
+    background-color: rgb(167, 45, 45);
+    position: absolute;
+    width: 100%;
+    height: 45px;
+}
+.task-removed-alert p{
+    margin-left: 35px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.task-removed-alert button{
+    position: absolute;
+    left: 97%;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.task-removed-alert button:hover{
+    color: rgb(40, 238, 40);
+    transition: all .3s;
+}
+.task-removed-alert button i{
+    font-size: 25px;
+}
+.task-removed-alert i[class="fas fa-info-circle"]{
+    position: absolute;
+    top: 5px;
+    margin-left: 5px;
+    font-size: 25px;
+}
+/*Footer styles*/
 footer{
     margin-top: 200px;
     text-align: center;
@@ -176,4 +247,9 @@ footer a{
 footer a:hover{
     text-decoration: underline;
     transition: all .3s ease;
+}
+/*Animations*/
+.alertClose{
+    transform: translateX(-4000px);
+    transition: all 3s ease-out;
 }

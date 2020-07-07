@@ -3,10 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/JS Task App/img/favicon.ico" type="image/x-icon">
     <title>JS Task App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
     <link rel="stylesheet" href="/JS Task App/css/style.css">
 </head>
 <body>
+    <div class="task-added-alert">
+        <button id="close-task-added-alert"><i class="fas fa-times"></i></button>
+        <i class="fas fa-info-circle"></i>
+        <p>Task Added Successfully</p>
+    </div>
+    <div class="task-removed-alert">
+        <button id="close-task-removed-alert"><i class="fas fa-times"></i></button>
+        <i class="fas fa-info-circle"></i>
+        <p>Task Deleted Successfully</p>
+    </div>
     <nav>
         <a href="#">JS Task App</a>
         <button id="hide-form-btn" onclick="HideShowForm()">Hide</button>
